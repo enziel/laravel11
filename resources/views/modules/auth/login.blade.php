@@ -12,9 +12,9 @@
                     
                     <div class="car-body">
                         <h5 class="card-title mx-3 my-4">Iniciar sesión</h5>
-                        <form action="" method="POST">
+                        <form action="{{route('logear')}}" method="POST">
                             @csrf
-                            
+                            @method('POST')
                             <div class="mb-3 mx-3">
                                 <label for="email" class="form-label">Email</label>
                                 <input type="email" class="form-control" id="email" name="email">
